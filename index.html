@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Resume</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+				jQuery(window).on("scroll", function(){
+					if(jQuery(window).scrollTop() > 0){
+						jQuery("#toTop").show();
+						jQuery("#toTop").on("click", function(){
+							jQuery(window).scrollTop(0);
+						});
+					}
+					else{
+						jQuery("#toTop").hide();
+					}
+					if(jQuery(window).scrollTop() >= 575){
+						jQuery(".navWrapper").addClass("active");
+					}
+					else {
+						jQuery(".navWrapper").removeClass("active");
+					}
+				});
+				jQuery('#horizontalTab').easyResponsiveTabs({
+					type: 'default', //Types: default, vertical, accordion
+					width: 'auto', //auto or any width like 600px
+					fit: true   // 100% fit in a container
+				});
+
+
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="homeBanner" id="homeBanner">
+			<div class="bannerContainer">
+				<div class="container">
+					<div class="col-md-4 resumeImg">
+						<img src="images/img1.jpg" alt="img1" />
+					</div>
+					<div class="col-md-8 resumeDetails">
+						<h2>Hello</h2>
+						<h1>I'm Hariharasudhan</h1>
+						<h6>Web Developer</h6>
+						<ul class="addressDetails">
+							<li>
+								<ul class="labelText">
+									<li><label>D.O.B</label></li>
+									<li><span>25-07-1991</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="labelText">
+									<li><label>Mobile</label></li>
+									<li><span>9686959392</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="labelText">
+									<li><label>Address</label></li>
+									<li><span>Bangalore</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="labelText">
+									<li><label>Email</label></li>
+									<li><span>official.harihara@gmail.com</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="labelText">
+									<li><label>Website</label></li>
+									<li><span>www.website.com</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="navWrapper">
+			<div class="container">
+				<div class="menu">
+					<ul>
+						<li role="presentaion" class="menuName"><a href="#about">About</a></li>
+						<li role="presentaion" class="menuName"><a href="#experience">Experience</a></li>
+						<li role="presentaion" class="menuName"><a href="#education">Education</a></li>
+						<li role="presentaion" class="menuName"><a href="#skills">Skills</a></li>
+						<li role="presentaion" class="menuName"><a href="#myprojects">My Projects</a></li>
+						<li role="presentaion" class="menuName"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="about">
+		<div class="container">
+			<div class="service-head text-center">
+						<h4>WHO AM I</h4>
+						<h3>ABOUT <span>ME</span></h3>
+						<span class="border one"></span>
+			</div>
+			<div class="aboutMe">
+				  <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus arcu ut felis rutrum suscipit. Sed malesuada cursus sodales. Proin consectetur tellus eget fermentum posuere. Curabitur tempus lorem leo, vitae finibus lorem dapibus quis. Curabitur orci mauris, convallis at diam et, mattis malesuada nunc. Pellentesque vestibulum ligula sit amet nunc tincidunt, eu pretium dui iaculis. Ut ac mauris quis risus fringilla venenatis. Nulla imperdiet placerat eleifend. Nam ut massa et nulla eleifend vulputate et eu elit. Pellentesque efficitur leo nisi. Fusce pellentesque orci ut eros lobortis tincidunt. Etiam in mi ultricies, euismod quam eu, finibus ante. Aliquam varius rutrum egestas. Ut non molestie odio. Nunc porta cursus laoreet. Cras porta quam ex, eget fermentum risus pretium quis.
+						Duis sodales neque est, et euismod sem fringilla ac. Sed ullamcorper ex quis interdum imperdiet. Nullam laoreet dolor sit amet magna lobortis, egestas venenatis felis mollis. Sed dignissim tincidunt ex, nec congue elit aliquam vitae. Ut imperdiet ipsum ac quam luctus pretium. Maecenas aliquet ligula tincidunt vestibulum malesuada. Nullam eu ipsum tortor. Cras sed risus lacinia, vulputate leo quis, molestie dui. Nunc sit amet hendrerit augue. Nulla facilisi.
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 contentAbout pull-right">
+								<h3>Awards</h3>
+							 <ul>
+								 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+								 <li>Aliquam tincidunt mauris eu risus.</li>
+								 <li>Vestibulum auctor dapibus neque.</li>
+							</ul>
+					</div>
+			</div>
+		</div>
+
+	</div>
+	<div id="services" class="services">
+				<div class="container">
+					<div class="service-head one text-center ">
+						<h4>WHAT I DO</h4>
+						<h3>MY <span>SERVICES</span></h3>
+						<span class="border two"></span>
+					</div>
+					<!-- services-grids -->
+					<div class="wthree_about_right_grids w3l-agile">
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>Web Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-cog"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>Web Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-leaf"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>Web Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-gift"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>Web Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				</div>
+			</div>
+	<div id="experience">
+		<div class="container">
+		<div class="service-head text-center">
+					<h4>WHAT I DID</h4>
+					<h3>MY <span>EXPERIENCE</span></h3>
+					<span class="border one"></span>
+				</div>
+				<div class="time-main w3l-agile">
+						<div class="col-md-6 year-info">
+							 <ul class="year">
+								 <li>2015-till</li>
+								 <li>2014-2015</li>
+								 <li>2013-2014</li>
+								 <div class="clearfix"></div>
+							</ul>
+						</div>
+							<ul class="col-md-6 timeline">
+								<li>
+									<div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+									<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4 class="timeline-title">Embitel Technologies (I) Pvt Ltd</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+									</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
+									<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4 class="timeline-title">Infotech Global India Pvt Ltd</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+									</div>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-badge pass"><i class="glyphicon glyphicon-briefcase"></i></div>
+									<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4 class="timeline-title">Adair Technologies Pvt Ltd</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+									</div>
+									</div>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+							</div>
+					</div>
+	</div>
+	<div id="education">
+			<div class="container">
+				<div class="service-head one text-center ">
+					<h4>WHAT I STUDIED</h4>
+					<h3>MY <span>EDUCATION</span></h3>
+					<span class="border two"></span>
+				</div>
+				<div class="time-main work-info">
+					<div class="col-md-6 work-left">
+						<h4>2010 - 2013 </h4>
+					</div>
+					<div class="col-md-6 work-right">
+						<h5><span class="glyphicon glyphicon-education"> </span>BE(Computer Science and Engineering)</h5>
+						<p> </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-right work-right2">
+						<h4>2008 - 2010 </h4>
+					</div>
+					<div class="col-md-6 work-left work-left2">
+						<h5>Diploma in Computer Education <span class="glyphicon glyphicon-education"> </span></h5>
+						<p> </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-left">
+						<h4>2006 - 2008 </h4>
+					</div>
+					<div class="col-md-6 work-right">
+						<h5><span class="glyphicon glyphicon-education"> </span>Higher Secondary Examination</h5>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-right work-right2">
+						<h4>2004 - 2006 </h4>
+					</div>
+					<div class="col-md-6 work-left work-left2">
+						<h5> Secondary School Leaving Certificate <span class="glyphicon glyphicon-education"></span> </h5>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<section class="bg-white" id="skills">
+	      <div class="container">
+					<div class="service-head text-center">
+								<h4>WHAT I DID</h4>
+								<h3>MY <span>SKILLS</span></h3>
+								<span class="border one"></span>
+					</div>
+					<div class="clearfix"> </div>
+	        <div class="row mg-b-lg">
+	          <div class="col-md-12 col-sm-10 col-sm-offset-1 col-xs-12 progress-wrap">
+							<div class="progress">
+	              <div class="progress-bar wow skillHeight" style="width: 80%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">80%</span>
+	              </div>
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Html5</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Css3</span>
+	              </div>
+	              <div class="progress-bar wow skillHeight" style="width: 80%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">80%</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-title">
+	                <span class="subtext text-dark">JScript</span>
+	              </div>
+	              <div class="progress-bar wow skillHeight" style="width: 60%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">80%</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Design</span>
+	              </div>
+	              <div class="progress-bar wow skillHeight" style="width: 90%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">90%</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-title">
+	                <span class="subtext text-dark">jQuery</span>
+	              </div>
+	              <div class="progress-bar wow skillHeight" style="width: 50%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">60%</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-bar wow skillHeight" style="width: 80%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">80%</span>
+	              </div>
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Less</span>
+	              </div>
+	            </div>
+
+	            <div class="progress">
+	              <div class="progress-bar wow skillHeight" style="width: 80%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">80%</span>
+	              </div>
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Sass</span>
+	              </div>
+	            </div>
+	            <div class="progress">
+	              <div class="progress-bar wow skillHeight" style="width: 50%; visibility: visible; animation-name: skillHeight;">
+	                <span class="visible-xs-block">90%</span>
+	              </div>
+	              <div class="progress-title">
+	                <span class="subtext text-dark">Angular</span>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+	<div id="myprojects">
+			<div class="service-head one text-center">
+					<h4>MY WORKS</h4>
+					<h3>MY <span>PORTFOLIO</span></h3>
+					<span class="border two"></span>
+				</div>
+		<div class="portfolio-grids">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span>ALL</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>WEB DESIGN</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>MOBILE UI</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>ILLUSTRATIONS</span></li>
+					</ul>
+					<div class="resp-tabs-container">
+						<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>ALL</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic5.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd yes_marg ">
+
+									<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>WEB DESIGN</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+							<div class="col-md-3 team-gd ">
+								<div class="thumb">
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd  ">
+								<div class="thumb">
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+								</div>
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>MOBILE UI</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-3"><span class="resp-arrow"></span>ILLUSTRATIONS</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd">
+
+									<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="col-md-3 team-gd ">
+
+									<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+
+									</a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+	<div class="container">
+	<div class="service-head one text-center">
+						<h4>CONTACT ME</h4>
+						<h3>GET <span>IN TOUCH WITH ME</span></h3>
+						<span class="border two"></span>
+					</div>
+		<div class="mail_us">
+			<div class="col-md-6 mail_left">
+				<div class="contact-grid1-left">
+					<div class="contact-grid1-left1">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<h4>Contact By Email</h4>
+						<ul>
+							<li>Mail: <a href="mailto:info@example.com">official.harihara@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+					<div class="contact-grid1-left">
+						<div class="contact-grid1-left1">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+							<h4>Contact By Phone</h4>
+							<ul>
+								<li>Phone: +91-9686959392</li>
+							</ul>
+						</div>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 mail_right">
+				<form action="#" method="post">
+					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+					<textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<input type="submit" value="Send">
+
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="copy_right text-center">
+			<p>© 2023. All rights reserved</p>
+			 <ul class="social-icons two">
+							<li><a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+							<li><a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+							<li><a href="https://www.linkedin.com/in/hariharasudhanm/"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+							<li><a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
+							<li><a href="#"> <i class="fa fa-skype" aria-hidden="true"></i> </a></li>
+						</ul>
+		</div>
+	</div>
+	</div>
+	<div id="toTop">
+		  <span id="toTopHover"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+	</div>
+</div>
+</body>
+</html>
